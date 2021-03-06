@@ -1,0 +1,19 @@
+{
+  "name": "dance_web",
+  "version": "1.0.0",
+  "description": "A simple dance website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhruvil Shah",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.14",
+    "nodemon": "^2.0.7",
+    "parser": "^0.1.4",
+    "pug": "^3.0.0"
+  }
+}

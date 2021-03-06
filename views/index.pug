@@ -1,0 +1,30 @@
+doctype html
+html
+  style
+    include ../static/style.css
+  body
+    nav#navbar
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/") About Us
+        li
+          a(href="/") Services
+        li
+          a(href="/") Class Info
+        li
+          a(href="/") Contact Us
+    section#picture
+      p Welcome to Dance Academy
+      p Become expertise in Rolling yourself with Us
+    section#sponsors
+      h2 Sponsors
+    footer#footer
+      form(class="form" action="/index" method="post")
+        input(type="text", name="name" ,placeholder="Enter your name")
+        input(type="email",name="email",placeholder="Enter your mail")
+        input(type="number",name="age",placeholder="Enter you age")
+        button(type="submit") submit
+  script
+    include ../static/index.js
