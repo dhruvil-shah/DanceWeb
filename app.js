@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 200;
+const port = 3000;
 const bodyparser=require('body-parser')
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
@@ -13,7 +13,8 @@ const contactSchema = new mongoose.Schema({
     email:String,
     age:Number
   });
-  const Contact = mongoose.model('Contact', contactSchema);
+
+const Contact = mongoose.model('Contact', contactSchema);
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
