@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y:auto;
 }
 #navbar
 {
@@ -12,12 +14,43 @@
     margin: 13px auto;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden !important;
 }
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div{
+
+    width: 30%;
+    height: 100vh;
+    margin: 1rem;
+    overflow: hidden;
+    
+
+    
+}
+
+.bg{
+    
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg:hover{
+    transform: scale(1.2);
+}
+
+
 #navbar ul li a
 {
 color: rgb(1, 15, 29);
   text-decoration: none;
   padding:13px;
+  overflow: hidden !important;
   
 }
 #navbar ul li a:hover
@@ -41,7 +74,6 @@ color: rgb(1, 15, 29);
     font-size: 35px;
     padding-left: 53px;
     padding-top: 35px;
-
     height: 90vh;
     color: rgb(241, 31, 31);
     background-image: url(/static/dance_bg.jpg);
@@ -49,6 +81,8 @@ color: rgb(1, 15, 29);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 #sponsors
 {
     text-align: center;
